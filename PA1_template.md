@@ -20,7 +20,7 @@ For this analysis, we performed an exploratory analysis on 2 months of data on t
 
 ```r
 ## set working directory and load data
-setwd("C:/Users/Moo/Documents/Coursera/Data Science Specialization/5. Reproducible Research/Assignment 1")
+setwd("C:/Users/Moo/Documents/Coursera/Data Science Specialization/5. Reproducible Research/RepData_PeerAssessment1")
 data <- read.csv("activity.csv")
 
 ## Load packages necessary
@@ -44,7 +44,7 @@ head(data)
 ## 5    NA 2012-10-01       20 2012-10-01 00:20:00
 ## 6    NA 2012-10-01       25 2012-10-01 00:25:00
 ```
-knit2html() 
+
 The first few rows of the loaded data were shown above. 
 
 ###II. What is the mean total number of steps taken per day? 
