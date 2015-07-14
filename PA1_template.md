@@ -98,7 +98,9 @@ On average across all of the days in the dataset, the 835 interval of the 5-minu
 ## Total number of NA in the dataset
 Na.count <- sum(is.na(data$steps))
 ```
-There are 2304 missing values in the dataset. 
+There are 2304 missing values in the dataset. <br> 
+
+For the missing values, we will apply a naive method to impute NA steps. We'll simply fill in the NAs by the average from the 5-minute intervals calculated in section 3. 
 
 
 ```r
