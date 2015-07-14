@@ -80,7 +80,7 @@ The mean and median of total number of steps taken per day are 9354 and 10395, r
 ## calculate average daily activity pattern 
 avg.by.interval<- data.frame(aggregate(data$steps, by=list(data$interval), FUN=mean, na.rm=T))
 names(avg.by.interval) <- c("interval", "avg.steps")
-plot(avg.by.interval, type="l", main="Fig 2. Time series plot on Average number of Steps per intervals across dates", ylab= "Average number of steps", col="blue")
+plot(avg.by.interval, type="l", main="Fig 2. Time series plot on Average number of Steps\n per intervals across dates", ylab= "Average number of steps", col="blue")
 ```
 
 ![plot of chunk AverageDailyActivityPattern](figure/AverageDailyActivityPattern-1.png) 
@@ -149,7 +149,7 @@ new.avg <- data.frame(aggregate(new$steps,
 names(new.avg) <- c("interval", "weekday.or.weekend","steps")
 xyplot(new.avg$steps~new.avg$interval|new.avg$weekday.or.weekend, type="l",
        ylab="Number of steps", xlab= "5-Minute Interval", 
-       main="Fig 5. Panel plot of mean number of steps taken (across all dates)")
+       main="Fig 4. Panel plot of mean number of steps taken (across all dates)")
 ```
 
 ![plot of chunk Difference](figure/Difference-1.png) 
